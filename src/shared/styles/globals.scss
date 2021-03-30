@@ -1,0 +1,11 @@
+$cta: #1e7ec5;
+$dark-shade: #012a47;
+$mainFont: "Montserrat", sans-serif;
+$pFont: "Source Sans Pro", sans-serif;
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,34 @@
+@import "../../shared/styles/globals.scss";
+
+.modal {
+  @include flex();
+
+  .container {
+    background: #d13434;
+    // @include flex();
+    padding: 4rem 6rem;
+    text-align: center;
+    line-height: 1.9rem;
+    border-radius: 10px;
+
+    blockquote {
+      margin: 1rem 0rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      max-width: 40ch;
+      color: #efefef;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    p {
+      color: #ddd;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

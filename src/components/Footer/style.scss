@@ -1,0 +1,67 @@
+@import "../../shared/styles/globals.scss";
+
+footer {
+  background: $dark-shade;
+  width: 100vw;
+  min-height: 40vh;
+  padding: 4rem;
+  @include flex();
+  align-items: flex-start;
+
+  img {
+    width: 16rem;
+  }
+
+  .container {
+    width: 100%;
+    @include flex();
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 0rem 0rem 0rem;
+    align-items: flex-end;
+
+    ul {
+      @include flex();
+      align-items: flex-start;
+      list-style: none;
+      color: #fff8;
+      text-transform: uppercase;
+      font-family: $mainFont;
+      font-size: 0.8rem;
+      li {
+        margin: 0.5rem 0rem;
+        padding: 0.2rem 0rem;
+        cursor: pointer;
+        transition: all 0.4s ease;
+
+        &:hover {
+          color: #ffff;
+        }
+      }
+    }
+
+    img {
+      width: 30rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 6rem 2rem;
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      ul {
+        margin: 3rem 0rem;
+      }
+
+      img {
+        align-self: flex-end;
+        width: initial;
+        max-width: 100%;
+      }
+    }
+  }
+}

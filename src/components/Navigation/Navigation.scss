@@ -1,0 +1,55 @@
+@import "../../shared/styles/globals.scss";
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  transition: all 0.4s ease;
+
+  .logo {
+    width: 12rem;
+    max-width: 30%;
+  }
+
+  .ctas {
+    @include flex();
+    flex-direction: row;
+
+    div {
+      margin: 0rem 0.5rem;
+      padding: 1rem;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 1.4rem 1rem;
+
+    .ctas {
+      @include flex();
+      flex-direction: row;
+
+      div {
+        margin: 0rem 0.4rem;
+        padding: 0.6rem;
+
+        img {
+          max-width: 1.3rem;
+        }
+      }
+    }
+  }
+}
